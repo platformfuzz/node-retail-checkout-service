@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-containers",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-json",
+    "ms-vscode.vscode-node-debug2",
+    "ms-vscode.vscode-js-debug"
+  ]
+}
