@@ -1,0 +1,35 @@
+{
+  "name": "Node.js Retail Checkout Service Dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "bash .devcontainer/scripts/postCreate.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "typescript.preferences.importModuleSpecifier": "relative"
+      },
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-json",
+        "ms-vscode.vscode-node-debug2",
+        "ms-vscode.vscode-js-debug"
+      ]
+    }
+  },
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ],
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Retail Checkout Service",
+      "onAutoForward": "notify"
+    }
+  },
+  "remoteUser": "node"
+}

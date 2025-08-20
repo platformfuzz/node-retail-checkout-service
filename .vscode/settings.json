@@ -1,0 +1,78 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules/": true,
+    "dist/": true,
+    "build/": true,
+    "coverage/": true,
+    "**/*.log": true,
+    "**/*.tmp": true,
+    "**/*.temp": true,
+    "**/*.tar": true,
+    "**/*.prof": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "remote.extensionKind": {
+    "ms-azuretools.vscode-docker": "ui",
+    "ms-vscode-remote.remote-containers": "ui"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.includePackageJsonAutoImports": "auto",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
+}
